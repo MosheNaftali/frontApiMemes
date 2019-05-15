@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.articleHome{
+    width: 100%;
+}
+.asideHome{
+    width: 20%;
+    height: 100%;
+    display: inline-block;
+    float: left;
+    background: rgba(0, 96, 117, 0.05);
+    padding: 5px;
+}
+.sectionHome{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}

@@ -1,0 +1,30 @@
+.form{
+    width: 100%;
+    display: inline-block;
+}
+.form input[type="text"],
+.form input[type="number"]
+.form select,
+.form button{
+    display: block;
+    margin: 10px auto;
+    padding: 10px;
+    width: 30%;
+    background:none;
+    border: 1px solid #000;
+}
+.form button{
+    background: rgb(50, 90, 52);
+    color: #fff;
+    font-size: 30px;
+    transform: rotate()
+}
+.form button:hover{
+    background: rgb(74, 134, 77);
+    transition: 1s;
+}
+.respuesta{
+    background: #5bdd4f;
+    text-align: center;
+    font-size: 20px;
+}
