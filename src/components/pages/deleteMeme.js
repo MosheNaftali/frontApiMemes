@@ -22,7 +22,7 @@ export default class deleteMeme extends Component{
     }
     onSubmit(e){
         e.preventDefault();
-        Axios.delete(`https://backendlolaton--mosheshabes.repl.co/memes/${this.state._id}`)
+        Axios.delete(`https://api-meme-backend.herokuapp.com/memes/${this.state._id}`)
         .then(res => this.setState({respuesta:(res.data)}))
         .catch(err => console.log(err))
     }

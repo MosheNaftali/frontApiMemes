@@ -19,7 +19,7 @@ class Categorias extends Component{
     this.setState({
         categoria: e.target.value
     })
-    Axios.get(`https://backendlolaton--mosheshabes.repl.co/memes/categorias/${this.state.categoria}`)
+    Axios.get(`https://api-meme-backend.herokuapp.com/memes/categorias/${this.state.categoria}`)
     .then(res => {this.setState({datos: res.data})})
     .catch(err => console.log(err))
 }

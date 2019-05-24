@@ -10,7 +10,7 @@ class Home extends Component{
     datos:[]
   }
   componentDidMount(){
-    Axios.get('https://backendlolaton--mosheshabes.repl.co/memes')
+    Axios.get('https://api-meme-backend.herokuapp.com/memes')
       .then(res => {this.setState({datos: res.data})})
       .catch(err => console.log(err))
   }

@@ -29,7 +29,6 @@ class uploadMeme extends Component{
         this.setState({
             url: e.target.value
         })
-        
     }
     onChangeCategoria(e){
         this.setState({
@@ -50,7 +49,7 @@ class uploadMeme extends Component{
             categoria: this.state.categoria,
             calificacion: this.state.calificacion
         }
-        Axios.post('https://backendlolaton--mosheshabes.repl.co/memes', data)
+        Axios.post('https://api-meme-backend.herokuapp.com/memes', data)
         .then(res => this.setState({respuesta:(res.data)}))
         this.setState({
             name: "",
@@ -67,7 +66,7 @@ class uploadMeme extends Component{
                 <form onSubmit={this.onSubmit} className="form">
                     <input className="input-formulario-subida" type="text" name="name" placeholder="Nombre" value={this.state.name} onChange={this.onChangeName} required/>
                     <input className="input-formulario-subida" type="text" name="url" placeholder="URL de meme" value={this.state.url} onChange={this.onChangeUrl} required/>
-                    <select name="categoria" onChange={this.onChangeCategoria}>
+                    <select name="categoria" onChange={this.onChangeCategoria} className="selector">
                         <option value="" selected disabled></option>
                         <option value="programacion" >Programacion</option>
                         <option value="gameOfThrones" >Game Of Thrones</option>
